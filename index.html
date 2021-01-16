@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Converting</title>
+</head>
+
+<body>
+    <header class="mb-5">
+        <nav class="navbar navbar-dark bg-dark border-bottom px-5 fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="./assets/img/logotipo.png" alt="" width="35" height="30" class="d-inline-block align-top">
+                  Converting
+                </a>
+              </div>
+        </nav>
+    </header>
+
+    <main class="pb-5">
+        <section class="container-fluid p-5">
+            <h1 class="pb-2">Conversor de textos</h1>
+            <p>É só colocar seu texto aí embaixo e selecionar a conversão, aí ta pronto!</p>
+            <textarea class="form-control tab-pane fade show active" id="texto" rows="10"></textarea>
+            <div class="container-fluid d-flex justify-content-between">
+                <ul class="nav  pt-3" role="group">
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-outline-dark me-2" onclick="converterPrimeiraDaFrase()">Primeira letra da frase</button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-outline-dark me-2" onclick="converterPrimeiraDaPalavra()">Primeira Letra Da Palavra</button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-outline-dark me-2" onclick="converterParaMaiusculas()">MAIÚSCULAS</button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-outline-dark me-2" onclick="converterParaMinusculas()">minúsculas</button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-outline-dark me-2" onclick="converterParaAlternado()">AlTeRnAdO</button></li>
+                </ul>
+                <ul class="nav pt-3" role="group">
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-dark me-2" onclick="copiarTexto()">Copiar</button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-dark me-2" onclick="downloadTexto()">Download</button></li>
+                    <li class="nav-item"><button type="button" class="btn btn-sm btn-dark me-2" onclick="limparTexto()">Limpar</button></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="mt-5 py-2 bg-dark text-white">
+        <div class="container-fluid text-center mt-3">
+            <p class="mb-4">E-mail: luisfernandosilveira23@gmail.com</p>
+            <p>Phone: +55 (51) 9 8493 5515</p>
+        </div>
+        
+        <div class="container-fluid text-center mt-3">
+            <small>Copyright &copy; | <a href="https://github.com/Louissilver" target="_blank" class="text-light">@Louissilver</a> 2020</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
+    <script src="./js/conversao.js"></script>
+    <script src="./js/helpers/copiarTexto.js"></script>
+    <script src="./js/helpers/limparTexto.js"></script>
+    <script src="./js/helpers/downloadTexto.js"></script>
+</body>
+
+</html>
